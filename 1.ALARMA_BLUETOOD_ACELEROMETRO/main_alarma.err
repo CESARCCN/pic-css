@@ -1,0 +1,6 @@
+>>> Warning 203 "main_alarma.c" Line 50(1,1): Condition always TRUE
+>>> Warning 203 "main_alarma.c" Line 123(1,1): Condition always TRUE
+>>> Warning 202 "D:\CCS_PROGRAMAS\1.ALARMA_BLUETOOD_ACELEROMETRO\i2c_Flex_LCD.c" Line 174(13,17): Variable never used:   data
+      Memory usage:   ROM=37%      RAM=10% - 20%
+      0 Errors,  3 Warnings.
+Build Successful.

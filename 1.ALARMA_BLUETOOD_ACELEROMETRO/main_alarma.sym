@@ -1,0 +1,272 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+008.0   bocina
+008.1   luces
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @TRIS_C
+028     LCD_ADDR
+029     lcd_total_rows
+02A     lcd_total_columns
+02B     new_row_request
+02C     BACKLIGHT_LED
+02D     lcd_gotoxy.data
+02E-031 ax
+032-035 ay
+036-039 az
+03A     id
+03B     temp
+03C     clave
+03D     lcd_backlight_led.bl
+03D     test_alarma.i
+03D     lcd_init.addr
+03D     MAIN.@SCRATCH1
+03D     @PSTRINGC7_683.@SCRATCH1
+03E     lcd_init.col
+03E     test_alarma.t
+03E     @PSTRINGC7_683.@SCRATCH2
+03F     lcd_init.row
+03F     @PSTRINGCN7_9600_62_63.P1
+03F-042 @PRINTF_L32D_683FPFPF.P2
+03F     @PRINTF_X_9600_62_63.P3
+03F-042 @PRINTF_L32D_9600_62_63FPFPF.P4
+03F     @PRINTF_X_683.P5
+03F     adxl345_id.id
+03F     @PRINTF_D_9600_62_63.P1
+03F     adxl345_dato_eje.eje
+03F     @PSTRINGC7_9600_62_63.@SCRATCH1
+03F     @PSTRINGC7_683.@SCRATCH3
+03F     test_alarma.@SCRATCH1
+040     lcd_init.i
+040     @PRINTF_X_683.P1
+040-041 adxl345_dato_eje.x
+040     @PRINTF_X_9600_62_63.P1
+040     @PRINTF_D_9600_62_63.P2
+040     @PSTRINGC7_9600_62_63.@SCRATCH2
+040     @PSTRINGC7_683.@SCRATCH4
+040     @PSTRINGCN7_9600_62_63.@SCRATCH1
+041     lcd_init.@SCRATCH1
+041     @PSTRINGC7_9600_62_63.@SCRATCH3
+041     @PSTRINGCN7_9600_62_63.@SCRATCH2
+041     @PRINTF_D_9600_62_63.@SCRATCH1
+042-043 adxl345_dato_eje.y
+042     @PSTRINGC7_9600_62_63.@SCRATCH4
+042     @PSTRINGCN7_9600_62_63.@SCRATCH3
+042     @PRINTF_D_9600_62_63.@SCRATCH2
+043     @PRINTF_L32D_683FPFPF.P1
+043     @PRINTF_L32D_9600_62_63FPFPF.P2
+043     @PSTRINGCN7_9600_62_63.@SCRATCH4
+043     @PRINTF_D_9600_62_63.@SCRATCH3
+044-045 adxl345_dato_eje.z
+044     @PRINTF_L32D_683FPFPF.@SCRATCH1
+044     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH1
+044     @PRINTF_D_9600_62_63.@SCRATCH4
+045     @DIV88.P1
+045     @PRINTF_L32D_683FPFPF.@SCRATCH2
+045     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH2
+046     adxl345_dato_eje.xl
+046     @DIV88.P1
+046     @PRINTF_L32D_683FPFPF.@SCRATCH3
+046     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH3
+047     adxl345_dato_eje.xh
+047     @PRINTF_L32D_683FPFPF.@SCRATCH4
+047     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH4
+047     @DIV88.@SCRATCH1
+048     adxl345_dato_eje.yl
+048     @PRINTF_L32D_683FPFPF.@SCRATCH5
+048     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH5
+049     adxl345_dato_eje.yh
+049     @PRINTF_L32D_683FPFPF.@SCRATCH6
+049     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH6
+04A     adxl345_dato_eje.zl
+04A     @PRINTF_L32D_683FPFPF.@SCRATCH7
+04A     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH7
+04B     adxl345_dato_eje.zh
+04B     @PRINTF_L32D_683FPFPF.@SCRATCH8
+04B     @PRINTF_L32D_9600_62_63FPFPF.@SCRATCH8
+04C-04F @DIV3232.P1
+04C-04F adxl345_dato_eje.ax
+04C     LCD_PUTC.in_data
+04C-04F @FTOSD.P1
+04D     lcd_gotoxy.x
+04D     @delay_ms1.P1
+04E     lcd_gotoxy.y
+04F     lcd_gotoxy.row
+050     lcd_gotoxy.column
+050-053 @DIV3232.P1
+050-053 adxl345_dato_eje.ay
+050     @FTOSD.@SCRATCH1
+051     lcd_gotoxy.row_addr
+052     lcd_gotoxy.lcd_address
+053     lcd_gotoxy.@SCRATCH1
+054-057 adxl345_dato_eje.az
+054     lcd_send_byte.data
+054     @DIV3232.@SCRATCH1
+055     lcd_send_byte.type
+055     @DIV3232.@SCRATCH2
+056     lcd_send_byte.@SCRATCH1
+056     @DIV3232.@SCRATCH3
+057     i2c_send_nibble.data
+057     @DIV3232.@SCRATCH4
+058     i2c_send_nibble.type
+058     @I2C_READU_1.P1
+058-05B @MULFF.P2
+058-059 @SITOF.P3
+058     @DIV3232.@SCRATCH5
+059     i2c_send_nibble.@SCRATCH1
+05A     @I2C_WRITEU_1.P1
+05C-05F @MULFF.P1
+060     @MULFF.@SCRATCH1
+061     @MULFF.@SCRATCH2
+062     @MULFF.@SCRATCH3
+063     @MULFF.@SCRATCH4
+064     @MULFF.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+000031  LCD_INIT_STRING.call
+000035  LCD_INIT_STRING.data
+000039  dato_recibido_isr
+000043  @const701.call
+000052  @const703.call
+00005E  @const704.call
+00006D  @const705.call
+00007C  @const706.call
+00008B  @const707.call
+00009B  @const708.call
+0000A4  @const710.call
+0000A8  @const711.call
+0000B2  @const712.call
+0000BB  @const713.call
+0000C6  @const714.call
+0000D0  @const715.call
+0000DC  @const716.call
+0000E7  @const717.call
+0000F0  @const718.call
+0000FA  @const737.call
+000109  @const738.call
+000112  @const747.call
+00011E  @const749.call
+000125  @const756.call
+000130  @const758.call
+000137  @const759.call
+000141  @delay_ms1
+000156  @I2C_WRITEU_1
+000166  i2c_send_nibble
+0001B0  lcd_send_byte
+0001CE  lcd_clear
+0001D8  configuracion
+0001DE  lcd_init
+000229  lcd_backlight_led
+000247  adxl345_config
+00027E  @PSTRINGC7_9600_62_63
+0002CB  lcd_gotoxy
+000302  LCD_PUTC
+000327  @PSTRINGC7_683
+000372  @I2C_READU_1
+000382  @PSTRINGCN7_9600_62_63
+0003D8  @SITOF
+0003FD  @MULFF
+000472  adxl345_dato_eje
+00052D  @FTOSD
+00054C  @DIV3232
+00059B  @PRINTF_L32D_683FPFPF
+00065E  @PRINTF_L32D_9600_62_63FPFPF
+000725  @DIV88
+00073A  @PRINTF_D_9600_62_63
+000795  iniciar_alarma
+000800  test_alarma
+000800  adxl345_id
+00083A  @PRINTF_X_683
+000880  @PRINTF_X_9600_62_63
+000B12  MAIN
+000B12  @cinit1
+000B3A  @cinit2
+
+Project Directory:
+    D:\CCS_PROGRAMAS\1.ALARMA_BLUETOOD_ACELEROMETRO\
+
+Project Files:
+    main_alarma.c                                           [06-May.-23 12:32  CRC=F3EAF894]
+    main_alarma.h                                           [05-May.-23 17:40  CRC=CF12E969]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [03-Jul.-13 14:28  CRC=4E65664C]
+    ADXL345.c                                               [30-Abr.-23 17:43  CRC=713FD1A8]
+    ADXL345.h                                               [29-Abr.-23 22:26  CRC=119D01F6]
+    i2c_Flex_LCD.c                                          [27-Abr.-23 21:49  CRC=359D727A]
+
+Source signature=FF7B00DB
+
+Units:
+    main_alarma (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main_alarma.xsym
+    Errors:      main_alarma.err
+    Ext Symbols: main_alarma.esym
+    INHX8:       main_alarma.hex
+    Symbols:     main_alarma.sym
+    List:        main_alarma.lst
+    Debug/COFF:  main_alarma.cof
+    Project:     main_alarma.ccspjt
+    Call Tree:   main_alarma.tre
+    Statistics:  main_alarma.STA

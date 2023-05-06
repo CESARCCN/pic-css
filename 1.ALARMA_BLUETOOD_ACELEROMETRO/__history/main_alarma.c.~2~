@@ -1,0 +1,15 @@
+#include <main_alarma.h>   
+#use i2c(Master,Fast,sda=PIN_C4,scl=PIN_C3,force_hw)  
+#use RS232 (BAUD=9600, BITS=8, PARITY=N, XMIT=PIN_c6, RCV=PIN_C7)  //Comunicación Serie  
+#include "ADXL345.c"
+#include "i2c_Flex_LCD.c" 
+
+void main()                
+{
+
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

@@ -1,0 +1,27 @@
+[PROJECT]
+Target=main_alarma.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.008
+Compiler=PCM
+CCSVersion=5.008
+[Target Data]
+FileList=main_alarma.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;D:\CCS_PROGRAMAS\1.ALARMA_BLUETOOD_ACELEROMETRO\
+[D:\CCS_PROGRAMAS\1.ALARMA_BLUETOOD_ACELEROMETRO\main_alarma]
+Type=4
+[mru-list]
+1=main_alarma.c
+[Opened Files]
+1=main_alarma.c
+2=
+3=C:\Program Files (x86)\PICC\Devices\16F877A.h
+4=ADXL345.c
+5=ADXL345.h
+6=i2c_Flex_LCD.c
+7=
+[main_alarma.c]
+Type=4
+[Units]
+Count=1
+1=main_alarma (main)
